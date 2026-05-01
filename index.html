@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Verified Oil & Energy Deals</title>
+  <style>
+    :root{--bg:#07111f;--card:#0d1b2e;--line:#223a5e;--gold:#f7c948;--text:#fff;--muted:#c9d4e4;--soft:#8fa3bf}
+    *{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at top left,#14325d 0,#07111f 38%,#03070d 100%);color:var(--text)}
+    .wrap{max-width:1180px;margin:0 auto;padding:42px 20px}.hero{display:grid;grid-template-columns:1fr .95fr;gap:32px;align-items:center}.badge{color:var(--gold);letter-spacing:.12em;font-weight:800;font-size:13px;text-transform:uppercase}.card{background:rgba(13,27,46,.92);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 20px 70px rgba(0,0,0,.4)}
+    h1{font-size:54px;line-height:1.02;margin:12px 0}.gold{color:var(--gold)}.sub{font-size:20px;color:var(--muted);line-height:1.5;max-width:660px}.hero-img{margin:24px 0 0;border-radius:24px;overflow:hidden;border:1px solid rgba(247,201,72,.35);box-shadow:0 25px 90px rgba(0,0,0,.55)}.hero-img img{display:block;width:100%;height:auto}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}.mini{background:rgba(13,27,46,.9);border:1px solid var(--line);border-radius:16px;padding:16px}.fine{color:var(--soft);font-size:13px;line-height:1.45}
+    input,select,textarea{width:100%;margin:8px 0 14px;padding:13px;border-radius:10px;border:1px solid #355173;background:#07111f;color:white}label{font-size:13px;color:var(--muted);font-weight:800}button{width:100%;padding:15px;border:0;border-radius:12px;background:var(--gold);color:#07111f;font-weight:900;font-size:16px;cursor:pointer}.pillrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.pill{border:1px solid rgba(247,201,72,.4);color:var(--gold);padding:8px 11px;border-radius:999px;font-size:13px;font-weight:800}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}h1{font-size:40px}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <div class="badge">Oil • Energy • Verified Deal Flow</div>
+        <h1>Access Verified <span class="gold">Oil & Energy Deals</span></h1>
+        <p class="sub">For serious EN590 buyers, crude oil buyer mandates, Jet A1 buyers, sellers, and direct mandates. No chains. No time-wasters. Submit your requirements for review.</p>
+        <div class="pillrow"><span class="pill">EN590 Buyers</span><span class="pill">Crude Oil Mandates</span><span class="pill">Jet A1 Deals</span><span class="pill">Verified Sellers</span></div>
+        <div class="hero-img"><img src="assets/oil-energy-hero.png" alt="Global energy trading network with oil routes, cargo ships, oil rigs, and jet tankers"></div>
+        <div class="grid">
+          <div class="mini"><b>EN590</b><br><span class="fine">Diesel buyers & supply requests</span></div>
+          <div class="mini"><b>Crude Oil</b><br><span class="fine">Buyer mandates & sourcing</span></div>
+          <div class="mini"><b>Jet A1</b><br><span class="fine">Aviation fuel deal flow</span></div>
+        </div>
+      </div>
+      <form class="card" onsubmit="event.preventDefault(); alert('Form captured. Connect this form to Tally/Make.com webhook for live automation.');">
+        <h2>Submit For Review</h2>
+        <label>Full Name</label><input required name="name">
+        <label>Company</label><input name="company">
+        <label>Email</label><input required type="email" name="email">
+        <label>WhatsApp Number</label><input name="whatsapp">
+        <label>Your Role</label><select name="role"><option>Buyer</option><option>Seller</option><option>Mandate</option><option>Broker</option></select>
+        <label>Product</label><select name="product"><option>EN590</option><option>Crude Oil</option><option>Jet A1</option><option>LNG</option><option>Other</option></select>
+        <label>Monthly Quantity / Volume</label><input name="volume" placeholder="Example: 50,000 MT">
+        <label>Preferred Procedure</label><select name="procedure"><option>CIF</option><option>FOB</option><option>TTT</option><option>TTV</option><option>Other</option></select>
+        <label>Do you have LOI?</label><select name="loi"><option>No</option><option>Yes</option></select>
+        <label>Do you have POF?</label><select name="pof"><option>No</option><option>Yes</option></select>
+        <label>Notes / Requirements</label><textarea rows="4" name="notes"></textarea>
+        <button>SUBMIT FOR REVIEW</button>
+        <p class="fine">Compliance note: all parties are subject to verification and document review.</p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
